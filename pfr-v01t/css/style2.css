@@ -1,0 +1,766 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #f5f5f5
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 950px;
+    background-color: rgba(245, 245, 245, 0.8)
+}
+
+.headline {
+    font-family: Arial, Helvetica, sans-serifTahoma, Geneva, sans-serif;
+    font-size: 2em;
+    color: #C00;
+    letter-spacing: -1px
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serifTahoma, Geneva, sans-serif;
+    font-size: 2em;
+    color: red;
+    margin: 0
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-weight: 700
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 580px;
+    aspect-ratio: 16/9;
+    margin: 0 auto
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+img {
+    max-width: 800px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%
+}
+
+.scroll-down div {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 5px auto
+}
+
+.book {
+max-width: 500px;
+margin: auto;
+
+}
+
+.johnsonbox {
+    background-color: #fff;
+    height: auto;
+    max-width: 700px;
+    width: 80%;
+    border: 6px dashed #9b0707;
+    padding: 30px;
+    margin: 30px auto
+}
+
+.dados-footer {
+    max-width: 700px;
+    margin: auto;
+    background-color: #2a2a2a;
+    padding: 35px 0;
+    line-height: 20px
+}
+
+.dados-footer p {
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px
+}
+
+.dados-footer p a {
+    text-decoration: underline;
+    color: #999
+}
+
+.dados-footer p a:hover {
+    color: #fff;
+    text-decoration-color: #bf0000
+}
+
+.scroll-down div span {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid #840909;
+    border-bottom: 4px solid #840909;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: seta_down 1.5s infinite;
+    animation: seta_down 2s infinite;
+    box-sizing: border-box
+}
+
+@-webkit-keyframes seta_down {
+    0% {
+        transform: rotate(-45deg) translate(0px, 0px);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-30px, 30px);
+        opacity: 0
+    }
+}
+
+@keyframes seta_down {
+    0% {
+        transform: rotate(-45deg) translate(0px, 0px);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-30px, 30px);
+        opacity: 0
+    }
+}
+
+footer {
+    align-items: center;
+    background: #2a2a2a;
+    font-size: 14px;
+    color: #f5f5f5
+}
+
+.call_to_action_red {
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 22px 12px;
+    margin: 8px auto 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #e54747 0%, #bb0e31 100%);
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Roboto', sans-serif
+}
+
+.call_to_action_red:hover {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #bb0e31 0%, #e54747 100%)
+}
+
+.cta-red {
+    display: block;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(268deg, #5a0000, #bf0000, #5a0000, #bf0000);
+    background-size: 800% 800%;
+    -webkit-animation: cta 6s ease infinite;
+    -moz-animation: cta 6s ease infinite;
+    -o-animation: cta 6s ease infinite;
+    animation: cta 6s ease infinite;
+    text-decoration: underline;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.75)
+}
+
+.cta-red:hover {
+    background-color: #bf0000 !important;
+    background-image: none !important;
+    color: #fff !important
+}
+
+.cta-red:focus {
+    background-color: #bf0000 !important;
+    color: #fff !important;
+    background-image: none !important
+}
+
+.cta-red:active {
+    background-color: #bf0000 !important;
+    color: #fff !important;
+    background-image: none !important
+}
+
+.apx {
+    max-width: 700px;
+    width: 100%
+}
+
+@-webkit-keyframes cta {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@-moz-keyframes cta {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@-o-keyframes cta {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@keyframes cta {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em
+    }
+
+    .main_break h1 {
+        font-size: 1em
+    }
+
+    .main_break h2 {
+        font-size: 1.1em
+    }
+
+    .headline {
+        font-size: 1.5em
+    }
+
+    .subtitle {
+        font-size: 1em
+    }
+
+    img {
+        width: 100%
+    }
+
+    .content {
+        font-size: 16px
+    }
+}
+
+.main_break {
+    display: block;
+    box-sizing: border-box;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 5%;
+    overflow: hidden;
+    background-image: url(https://publifile.s3.amazonaws.com/jota-educacao/ebooks/2023/grid-me.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: initial
+}
+
+.main_break h1 {
+    font-family: "Outfit", "Arial", sans-serif;
+    font-size: 1.9em;
+    opacity: 0;
+    text-align: center;
+    font-weight: 700
+}
+
+.main_break h2 {
+    font-family: "Outfit", "Arial", sans-serif;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 130%;
+    font-weight: 700
+}
+
+.animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+
+    50% {
+        transform: scale3d(1.03, 1.03, 1.03)
+    }
+
+    to {
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.price {
+    display: block;
+    box-sizing: border-box;
+    padding: 0
+}
+
+@media only screen and (min-width: 576px) {
+    .price {
+        padding: 32px 0
+    }
+}
+
+.price_content {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px 0;
+    overflow: hidden;
+    font-family: "Outfit", "Arial", sans-serif;
+    color: #221f1f;
+    border-top: 1px solid #bf0000;
+    border-bottom: 1px solid #bf0000;
+    background-color: #F1EFE7;
+    border-radius: 5px
+}
+
+@media only screen and (min-width: 576px) {
+    .price_content {
+        width: 80%;
+        padding: 35px 35px 0
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content {
+        width: 75%
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .price_content {
+        width: 100%;
+        max-width: 950px
+    }
+}
+
+.price_content .price_intro {
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 35px
+}
+
+.price_content .price_intro s {
+    text-decoration-color: #bf0000
+}
+
+.price_content .price_parcela {
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 700;
+    text-align: center
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_parcela {
+        font-size: 26px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .price_content .price_parcela {
+        font-size: 28px
+    }
+}
+
+.price_content .price_valor {
+    text-align: center;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: 35px
+}
+
+@media only screen and (min-width: 576px) {
+    .price_content .price_valor {
+        font-size: 60px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_valor {
+        font-size: 70px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .price_content .price_valor {
+        font-size: 90px
+    }
+}
+
+.price_content .price_valor span {
+    color: #bf0000;
+    font-size: 80px
+}
+
+@media only screen and (min-width: 576px) {
+    .price_content .price_valor span {
+        font-size: 120px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_valor span {
+        font-size: 150px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .price_content .price_valor span {
+        font-size: 180px
+    }
+}
+
+.price_content .price_valor sup {
+    vertical-align: super;
+    font-size: 36px
+}
+
+@media only screen and (min-width: 576px) {
+    .price_content .price_valor sup {
+        font-size: 60px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_valor sup {
+        font-size: 70px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .price_content .price_valor sup {
+        font-size: 90px
+    }
+}
+
+.price_content p {
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 35px
+}
+
+.price_content .price_pagamentos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_pagamentos {
+        flex-flow: row wrap
+    }
+}
+
+.price_content .price_badges {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 224px;
+    box-sizing: border-box
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_badges {
+        justify-content: flex-start
+    }
+}
+
+.price_content .price_badges:first-child {
+    margin-bottom: 35px
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_badges:first-child {
+        margin-bottom: 0
+    }
+}
+
+.price_content .price_badges p {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+@media only screen and (min-width: 768px) {
+    .price_content .price_badges p {
+        text-align: left
+    }
+}
+
+.price_content .price_badges .price_icons {
+    display: block;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+    background-image: url(https://publifile.s3.amazonaws.com/jota-educacao/sprite-pagamentos.svg);
+    background-size: 120px 90px;
+    background-repeat: no-repeat;
+    border-radius: 5px
+}
+
+.price_content .price_badges .price_icons-visa {
+    background-position: 0 0
+}
+
+.price_content .price_badges .price_icons-master {
+    background-position: -30px 0
+}
+
+.price_content .price_badges .price_icons-amex {
+    background-position: -60px 0
+}
+
+.price_content .price_badges .price_icons-elo {
+    background-position: -90px 0
+}
+
+.price_content .price_badges .price_icons-hiper {
+    background-position: 0 -30px
+}
+
+.price_content .price_badges .price_icons-bb {
+    background-position: -30px -30px
+}
+
+.price_content .price_badges .price_icons-caixa {
+    background-position: -60px -30px
+}
+
+.price_content .price_badges .price_icons-santander {
+    background-position: -90px -30px
+}
+
+.price_content .price_badges .price_icons-bradesco {
+    background-position: 0 -60px
+}
+
+.price_content .price_badges .price_icons-itau {
+    background-position: -30px -60px
+}
+
+.price_content .price_badges .price_icons-boleto {
+    background-position: -60px -60px
+}
+
+.price_content .price_badges .price_icons-pix {
+    background-position: -90px -60px
+}
+
+.main_cta1 {
+    display: none;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 35px;
+    padding: 15px;
+    font-family: "Outfit", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #eb3f0f 0%, #ee6c08 100%);
+    border: solid 2px #b52c06;
+    border-radius: 6px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .3);
+    -o-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .3)
+}
+
+@media only screen and (min-width: 768px) {
+    .main_cta1 {
+        font-size: 24px;
+        padding: 20px 10px
+    }
+}
